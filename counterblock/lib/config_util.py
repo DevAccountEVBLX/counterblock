@@ -111,9 +111,9 @@ def extract_bitcoincore_config():
 
     # Figure out the path to the xep.conf file
     if platform.system() == 'Darwin':
-        btc_conf_file = os.path.expanduser('~/Library/Application Support/Bitcoin/')
+        btc_conf_file = os.path.expanduser('~/Library/Application Support/XEP/')
     elif platform.system() == 'Windows':
-        btc_conf_file = os.path.join(os.environ['APPDATA'], 'Bitcoin')
+        btc_conf_file = os.path.join(os.environ['APPDATA'], 'XEP')
     else:
         btc_conf_file = os.path.expanduser('~/.xep')
     btc_conf_file = os.path.join(btc_conf_file, 'xep.conf')

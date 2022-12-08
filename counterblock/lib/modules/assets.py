@@ -610,7 +610,7 @@ def parse_destruction(msg, msg_data):
         return
     if msg_data['status'] != 'valid':
         return
-    if msg_data['asset'] != None and msg_data['asset'] == 'XCP':
+    if msg_data['asset'] != None and msg_data['asset'] == 'SEP':
         return  
 
     cur_block_index = config.state['cur_block']['block_index']
