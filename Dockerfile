@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Counterparty Developers <dev@counterparty.io>
+MAINTAINER Electra Protocol Developers <team@electraprotocol.com>
 
 # PyEnv
 ENV PYENV_ROOT /root/.pyenv

@@ -17,11 +17,11 @@ REGULAR_DUST_SIZE = 546
 MULTISIG_DUST_SIZE = 7800
 ORDER_BTC_DUST_LIMIT_CUTOFF = MULTISIG_DUST_SIZE
 
-BTC = 'BTC'
-XBTC = 'XBTC'
-XCP = 'XCP'
+BTC = 'XEP'
+XBTC = 'XXEP'
+XCP = 'SEP'
 
-BTC_NAME = "Bitcoin"
+BTC_NAME = "Electra Protocol"
 XCP_NAME = "Counterparty"
 APP_NAME = "counterblock"
 COUNTERPARTY_APP_NAME = XCP_NAME.lower()
@@ -32,12 +32,12 @@ XCP_TO_BTC = XCP + '/' + BTC
 MAX_REORG_NUM_BLOCKS = 10  # max reorg we'd likely ever see
 MAX_FORCED_REORG_NUM_BLOCKS = 20  # but let us go deeper when messages are out of sync
 
-QUOTE_ASSETS = [BTC, XBTC, XCP, 'PEPECASH', 'BITCRYSTALS', 'FLDC', 'RUSTBITS', 'SCOTCOIN', 'DATABITS', 'BITCORN', 'MAFIACASH']  # define the priority for quote asset
+QUOTE_ASSETS = [BTC, XBTC, XCP]  # define the priority for quote asset
 MARKET_LIST_QUOTE_ASSETS = [XCP, BTC]  # define the order in the market list
 
 DEFAULT_BACKEND_PORT_REGTEST = 28332
 DEFAULT_BACKEND_PORT_TESTNET = 18332
-DEFAULT_BACKEND_PORT = 8332
+DEFAULT_BACKEND_PORT = 16816
 
 DEFAULT_LOG_SIZE_KB = 20000
 DEFAULT_LOG_NUM_FILES = 5
